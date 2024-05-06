@@ -17,6 +17,10 @@ It contains a collection of simple examples to demonstrate the Jakarta EE specif
 
 Read the online docs: https://hantsy.github.io/jakartaee10-starter-boilerplate/
 
+## IBM i Docs:
+
+How to run and deploy the project on IBM i: [here](docs/IBMi.md)
+
 ## Reference 
 
 * [Jakarta EE 10 Sandbox](https://github.com/hantsy/jakartaee10-sandbox)
