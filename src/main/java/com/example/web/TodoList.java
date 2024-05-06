@@ -79,7 +79,7 @@ public class TodoList implements Serializable {
         LOGGER.log(Level.INFO, "deleting todo:{0}", new Object[]{id});
         todoRepository.deleteById(id);
         loadTodos();
-        facesContext.addMessage(null,new FacesMessage("Todo '%s' was deleted sucessfully.".formatted(id.toString())));
+        facesContext.addMessage(null, new FacesMessage(String.format("Todo '%s' was deleted successfully.", id.toString())));
     }
     
     public void toggleCompletedStatus(UUID id) {

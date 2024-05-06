@@ -15,7 +15,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <!-- Jakarta EE 10 targets Java 11, but it is also required to support Java 17 -->
-        <maven.compiler.release>17</maven.compiler.release>
+        <maven.compiler.release>11</maven.compiler.release>
 
         <!-- The default value is changed to `false` since maven-war-plugin 3.0.0 -->
         <failOnMissingWebXml>false</failOnMissingWebXml>
@@ -365,10 +365,10 @@
                             <!--<jbossHome>D:\appsvr\wildfly-preview-22.0.0.Alpha1</jbossHome>-->
 
                             <!-- To deploy a running wildfly server -->
-                            <!-- <hostname></hostname>
-                                    <port></port>
-                                    <username></username>
-                                    <password></password> -->
+                            <hostname>UT201P18.RCH.STGLABS.IBM.COM</hostname>
+                            <port>9990</port>
+                            <username>admin</username>
+                            <password>admin123$</password>
 
                             <!-- or set a wildfly.id property to add a server in settings.xml -->
                             <!--<id>wildfly-svr</id> -->
@@ -508,7 +508,7 @@
                     <plugin>
                         <groupId>org.codehaus.cargo</groupId>
                         <artifactId>cargo-maven3-plugin</artifactId>
-                        <version>${cargo-maven3-plugin.version}</version>
+                        <!-- <version>${cargo-maven3-plugin.version}</version> -->
                         <configuration>
                             <container>
                                 <containerId>payara</containerId>
@@ -552,25 +552,25 @@
                 <dependency>
                     <groupId>org.glassfish.jersey.media</groupId>
                     <artifactId>jersey-media-multipart</artifactId>
-                    <version>${jersey.version}</version>
+                    <!-- <version>${jersey.version}</version> -->
                     <scope>test</scope>
                 </dependency>
                 <dependency>
                     <groupId>org.glassfish.jersey.media</groupId>
                     <artifactId>jersey-media-json-binding</artifactId>
-                    <version>${jersey.version}</version>
+                    <!-- <version>${jersey.version}</version> -->
                     <scope>test</scope>
                 </dependency>
                 <dependency>
                     <groupId>org.glassfish.jersey.inject</groupId>
                     <artifactId>jersey-hk2</artifactId>
-                    <version>${jersey.version}</version>
+                    <!-- <version>${jersey.version}</version> -->
                     <scope>test</scope>
                 </dependency>
                 <dependency>
                     <groupId>org.glassfish.jersey.core</groupId>
                     <artifactId>jersey-client</artifactId>
-                    <version>${jersey.version}</version>
+                    <!-- <version>${jersey.version}</version> -->
                     <scope>test</scope>
                 </dependency>
                 <dependency>
@@ -664,25 +664,25 @@
                 <dependency>
                     <groupId>org.glassfish.jersey.media</groupId>
                     <artifactId>jersey-media-multipart</artifactId>
-                    <version>${jersey.version}</version>
+                    <!-- <version>${jersey.version}</version> -->
                     <scope>test</scope>
                 </dependency>
                 <dependency>
                     <groupId>org.glassfish.jersey.media</groupId>
                     <artifactId>jersey-media-json-binding</artifactId>
-                    <version>${jersey.version}</version>
+                    <!-- <version>${jersey.version}</version> -->
                     <scope>test</scope>
                 </dependency>
                 <dependency>
                     <groupId>org.glassfish.jersey.inject</groupId>
                     <artifactId>jersey-hk2</artifactId>
-                    <version>${jersey.version}</version>
+                    <!-- <version>${jersey.version}</version> -->
                     <scope>test</scope>
                 </dependency>
                 <dependency>
                     <groupId>org.glassfish.jersey.core</groupId>
                     <artifactId>jersey-client</artifactId>
-                    <version>${jersey.version}</version>
+                    <!-- <version>${jersey.version}</version> -->
                     <scope>test</scope>
                 </dependency>
                 <dependency>
@@ -745,13 +745,13 @@
                 <dependency>
                     <groupId>org.jboss.resteasy</groupId>
                     <artifactId>resteasy-client</artifactId>
-                    <version>${resteasy.version}</version>
+                    <!-- <version>${resteasy.version}</version> -->
                     <scope>test</scope>
                 </dependency>
                 <dependency>
                     <groupId>org.jboss.resteasy</groupId>
                     <artifactId>resteasy-jackson2-provider</artifactId>
-                    <version>${resteasy.version}</version>
+                    <!-- <version>${resteasy.version}</version> -->
                     <scope>test</scope>
                 </dependency>
 
@@ -853,13 +853,13 @@
                 <dependency>
                     <groupId>org.jboss.resteasy</groupId>
                     <artifactId>resteasy-client</artifactId>
-                    <version>${resteasy.version}</version>
+                    <!-- <version>${resteasy.version}</version> -->
                     <scope>test</scope>
                 </dependency>
                 <dependency>
                     <groupId>org.jboss.resteasy</groupId>
                     <artifactId>resteasy-jackson2-provider</artifactId>
-                    <version>${resteasy.version}</version>
+                    <!-- <version>${resteasy.version}</version> -->
                     <scope>test</scope>
                 </dependency>
                 <!-- use Jersey client instead -->
@@ -953,20 +953,20 @@
                 <dependency>
                     <groupId>org.glassfish.jersey.media</groupId>
                     <artifactId>jersey-media-json-binding</artifactId>
-                    <version>${jersey.version}</version>
+                    <!-- <version>${jersey.version}</version> -->
                     <scope>test</scope>
                 </dependency>
                 <dependency>
                     <groupId>org.glassfish.jersey.inject</groupId>
                     <artifactId>jersey-hk2</artifactId>
-                    <version>${jersey.version}</version>
+                    <!-- <version>${jersey.version}</version> -->
                     <scope>test</scope>
                 </dependency>
 
                 <dependency>
                     <groupId>org.glassfish.jersey.core</groupId>
                     <artifactId>jersey-client</artifactId>
-                    <version>${jersey.version}</version>
+                    <!-- <version>${jersey.version}</version> -->
                     <scope>test</scope>
                 </dependency>
             </dependencies>
@@ -1085,20 +1085,20 @@
                 <dependency>
                     <groupId>org.glassfish.jersey.media</groupId>
                     <artifactId>jersey-media-json-binding</artifactId>
-                    <version>${jersey.version}</version>
+                    <!-- <version>${jersey.version}</version> -->
                     <scope>test</scope>
                 </dependency>
                 <dependency>
                     <groupId>org.glassfish.jersey.inject</groupId>
                     <artifactId>jersey-hk2</artifactId>
-                    <version>${jersey.version}</version>
+                    <!-- <version>${jersey.version}</version> -->
                     <scope>test</scope>
                 </dependency>
 
                 <dependency>
                     <groupId>org.glassfish.jersey.core</groupId>
                     <artifactId>jersey-client</artifactId>
-                    <version>${jersey.version}</version>
+                    <!-- <version>${jersey.version}</version> -->
                     <scope>test</scope>
                 </dependency>
             </dependencies>
