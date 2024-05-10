@@ -37,3 +37,5 @@ replay_pid*
 
 .idea/
 *.iml
+
+.env

@@ -15,12 +15,19 @@ public class CreateTodoCommand {
     @NotBlank
     private String title;
 
+    public CreateTodoCommand() {}
+
+
     public CreateTodoCommand(String title) {
         this.title = title;
     }
 
     public String title() {
         return this.title;
+    }
+    
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public static CreateTodoCommand of(String _title) {
